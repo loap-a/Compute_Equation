@@ -201,6 +201,8 @@ class ExpressionException extends Exception {
 public class Compute_Equation{
     public static void main(String[] args) {
 
+        try{}
+        catch(Exception e){}
 
         Logger l1=Logger.getLogger("expression");l1.log(Level.INFO,"Begin");
         Logger l2=Logger.getLogger("expression.error");l2.log(Level.INFO,"Begin");
@@ -893,6 +895,17 @@ class number {
     }
 }
 
+
+//class a{
+//    public void show()throws IOException
+//    {
+//        try {
+//            throw new ClassNotFoundException();
+//        } catch (ClassNotFoundException e) {
+//            e.printStackTrace();
+//        }
+//    }
+//}
 //
 //    public void a()throws SQLException {
 //        throw new BatchUpdateException();
